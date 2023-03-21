@@ -1,0 +1,23 @@
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            For Each Demo
+        </h3>
+        <template for:each={contacts} for:item="contact" for:index="index">
+            <div key={contact.id}>
+                {index} &nbsp; {contact.name} &nbsp; {contact.email}
+            </div>
+        </template>
+    </lightning-card><br/><br/>
+    <lightning-card title="HelloIterator">
+        <ul class="slds-m-around_medium">
+            <template iterator:it={contacts}>
+                <li key={it.value.Id}>
+                    <div lwc:if={it.first} class="list-first"></div>
+                    {it.value.name}, {it.value.email}
+                    <div lwc:if={it.last} class="list-last"></div>
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

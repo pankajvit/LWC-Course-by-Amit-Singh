@@ -1,0 +1,29 @@
+{
+  "orgName": "SFDCPanther-Udemy3",
+  "edition": "Enterprise",
+  "features": [
+        "Communities",
+        "MultiCurrency" , 
+        "ContactsToMultipleAccounts",
+        "CascadeDelete",
+        "Communities",
+        "PersonAccounts",
+        "StateAndCountryPicklist",
+        "Entitlements",
+        "LiveAgent"
+    ],
+    "settings": {
+      "communitiesSettings": {
+          "enableNetworksEnabled": true
+      },
+      "mobileSettings": {
+          "enableS1EncryptedStoragePref2": true
+      },
+      "omniChannelSettings": {
+          "enableOmniChannel": true
+      },
+      "caseSettings": {
+          "systemUserEmail": "pankajvitmca@gmail.com"
+      }
+  }
+}
