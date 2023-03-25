@@ -11,5 +11,6 @@
 
     <!-- <c:disconnectedCallbackDemo/> -->
 
-    <c:renderLwc/>
+    <!-- <c:renderLwc/> -->
+    <c:parentComp />
 </aura:application>	
