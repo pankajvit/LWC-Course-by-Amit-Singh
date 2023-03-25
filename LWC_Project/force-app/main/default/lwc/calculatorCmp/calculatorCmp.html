@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-m-around_small">
+        <lightning-card title="Calculator">
+
+                <lightning-input type="number" name="input1" value={number1} label="Number 1" placeholder="input your number here" onchange={handleChangeEvent}></lightning-input>
+                <lightning-input type="number" name="input2" value={number2} label="Number 2" placeholder="input your number here" onchange={handleChangeEvent}></lightning-input>
+
+                <lightning-button variant="brand" label="Sum" title="Primary action" onclick={doSum} class="slds-m-left_x-small"></lightning-button>
+                <lightning-button variant="brand" label="Subs" title="Primary action" onclick={doSubs} class="slds-m-left_x-small"></lightning-button>
+                <lightning-button variant="brand" label="Multiply" title="Primary action" onclick={doMulti} class="slds-m-left_x-small"></lightning-button>
+                <lightning-button variant="brand" label="Division" title="Primary action" onclick={doDiv} class="slds-m-left_x-small"></lightning-button>
+        </lightning-card>
+    </div>
+</template>

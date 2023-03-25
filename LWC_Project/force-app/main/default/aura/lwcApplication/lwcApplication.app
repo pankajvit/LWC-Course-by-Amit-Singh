@@ -2,5 +2,14 @@
 
     <!--<c:helloWorld/> -->
 
-    <c:iteratorDemo/>
+    <!-- <c:iteratorDemo/> -->
+    <!-- <c:calculatorCmp/> -->
+
+    <!-- <c:propDemo/> -->
+    <!-- <c:getterSetterDemo /> -->
+    <!-- <c:hooksExample/> -->
+
+    <!-- <c:disconnectedCallbackDemo/> -->
+
+    <c:renderLwc/>
 </aura:application>	
