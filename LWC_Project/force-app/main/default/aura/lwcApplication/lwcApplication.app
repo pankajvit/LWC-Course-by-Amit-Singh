@@ -1,4 +1,4 @@
-<aura:application>
+<aura:application extends="force:slds">
 
     <!--<c:helloWorld/> -->
 
@@ -12,5 +12,9 @@
     <!-- <c:disconnectedCallbackDemo/> -->
 
     <!-- <c:renderLwc/> -->
-    <c:parentComp />
+    <!-- <c:parentComp /> -->
+
+    <!-- <c:slotsWrapper/> -->
+
+    <c:metaExamples/>
 </aura:application>	

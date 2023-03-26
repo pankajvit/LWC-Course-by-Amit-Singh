@@ -1,9 +1,10 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,api } from 'lwc';
 import template1 from './template1.html';
 import parent from './renderLwc.html';
 
 export default class RenderLwc extends LightningElement {
     toggleTemplate = false;
+    @api myValue = 'whatever value';
 
     render(){
         return this.toggleTemplate?template1:parent;
