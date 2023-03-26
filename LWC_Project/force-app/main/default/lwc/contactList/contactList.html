@@ -1,0 +1,7 @@
+<template>
+    <template if:true={contacts}>
+        <template for:each={contacts} for:item="con">
+                <c-contact-tile contact={con} key={con.id}></c-contact-tile>
+        </template>
+    </template>
+</template>

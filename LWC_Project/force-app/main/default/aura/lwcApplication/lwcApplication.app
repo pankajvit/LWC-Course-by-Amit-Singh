@@ -16,5 +16,6 @@
 
     <!-- <c:slotsWrapper/> -->
 
-    <c:metaExamples/>
+    <!-- <c:metaExamples/> -->
+    <c:contactList/>
 </aura:application>	
