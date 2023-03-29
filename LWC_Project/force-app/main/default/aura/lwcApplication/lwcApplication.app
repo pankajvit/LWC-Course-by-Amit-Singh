@@ -17,5 +17,9 @@
     <!-- <c:slotsWrapper/> -->
 
     <!-- <c:metaExamples/> -->
-    <c:contactList/>
+    <!-- <c:contactList/> -->
+
+    <!-- <c:auralwc/> -->
+
+    <c:sharedMisc />
 </aura:application>	

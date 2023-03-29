@@ -1,5 +1,13 @@
 <template>
-    <h1>I am inside parent component.</h1>
-    <c-child-comp message="Parent to child passed" pageno="23"></c-child-comp>
-    <c-grand-child-comp></c-grand-child-comp>
+    <div class="slds-m-around_small" onsimple={handleSimpleEvent}>
+        <h1>I am inside parent component.</h1>
+        <c-child-comp onsimple={handleChildEvent} message="Message from Parent" pageno="35"></c-child-comp>
+        <c-grand-child-comp></c-grand-child-comp>
+    </div>
+    <div class="slds-m-around_small">
+        <lightning-button label="Change Date" 
+            onclick={handleClick} 
+            variant="brand">
+        </lightning-button>
+    </div>
 </template>
