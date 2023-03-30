@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="LDS Edit Record" icon-name="custom:custom35">
+        <div class="slds-m-around_small">
+            <lightning-record-form
+                record-id={recordId}
+                object-api-name={objectApiName}
+                layout-type="Full"
+                columns="2"
+                mode="edit"
+                onsubmit={handleSubmit}
+                onsuccess={handleSuccess}
+                >
+            </lightning-record-form>
+        </div>
+    </lightning-card>
+</template>
