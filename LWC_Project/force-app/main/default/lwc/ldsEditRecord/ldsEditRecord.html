@@ -1,6 +1,15 @@
 <template>
     <lightning-card title="LDS Edit Record" icon-name="custom:custom35">
         <div class="slds-m-around_small">
+            <lightning-record-edit-form record-id={recordId} object-api-name={objectApiName}
+                onsubmit={handleSubmit}
+                onsuccess={handleSuccess}>
+                <lightning-input-field field-name="Subject"></lightning-input-field>
+                <lightning-input-field field-name="Status"></lightning-input-field>
+                <lightning-button type="submit" label="Update Case"></lightning-button>
+            </lightning-record-edit-form>
+        </div>
+        <div class="slds-m-around_small">
             <lightning-record-form
                 record-id={recordId}
                 object-api-name={objectApiName}
@@ -9,6 +18,7 @@
                 mode="edit"
                 onsubmit={handleSubmit}
                 onsuccess={handleSuccess}
+                onerror={handleError}
                 >
             </lightning-record-form>
         </div>

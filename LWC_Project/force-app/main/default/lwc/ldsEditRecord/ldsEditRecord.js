@@ -11,4 +11,7 @@ export default class LdsEditRecord extends LightningElement {
     handleSuccess(){
         alert('handled success');
     }
+    handleError(){
+        alert('handling error');
+    }
 }

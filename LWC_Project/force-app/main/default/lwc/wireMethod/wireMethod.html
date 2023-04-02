@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Case Details" icon-name="standard:case">
+        <!--<div class="slds-m-around_small">
+            <template for:each={cases.data} for:item="item">
+                <p key={item.Id}>
+                    {item.Subject} <br/>
+                    {item.Status} <br/>
+                </p>
+            </template> 
+            <template if:true={cases.error}>
+                There is an Error while fetching the cases.
+            </template>
+        </div> -->
+        <div class="slds-m-around_small">
+            <template for:each={records} for:item="item">
+                <p key={item.Id}>
+                    {item.Subject} <br/>
+                    {item.Status} <br/>
+                </p>
+            </template> 
+            <template if:true={erros}>
+                There is an Error while fetching the cases.
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -21,5 +21,7 @@
 
     <!-- <c:auralwc/> -->
 
-    <c:sharedMisc />
+    <!-- <c:sharedMisc /> -->
+
+    <c:wireMethod/>
 </aura:application>	
