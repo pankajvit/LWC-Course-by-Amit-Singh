@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="latest Ten Accounts">
+        <lightning-button variant="brand" slot="actions" label="Delete Account" onclick={deleteRecord}>
+        </lightning-button>
+        <lightning-button variant="brand" slot="actions" label="Update Account" onclick={updateRecord}>
+        </lightning-button>
+        <lightning-datatable
+            data={accountList}
+            columns={cols}
+            key-field="Id"
+            max-row-selection="1"
+            onrowselection={handleSelection}>
+        </lightning-datatable>
+    </lightning-card>
+</template>

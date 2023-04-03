@@ -23,5 +23,9 @@
 
     <!-- <c:sharedMisc /> -->
 
-    <c:wireMethod/>
+    <!-- <c:wireMethod/> -->
+
+    <div class="slds-var-m-around_large">
+        <c:lwcRefreshApex></c:lwcRefreshApex>
+    </div>
 </aura:application>	

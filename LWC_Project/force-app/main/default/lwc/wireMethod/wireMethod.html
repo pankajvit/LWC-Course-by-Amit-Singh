@@ -12,12 +12,20 @@
             </template>
         </div> -->
         <div class="slds-m-around_small">
+            <div>
+                <lightning-input value={subject} 
+                        label = "Search Case by Subject"
+                        onchange={handleChange}></lightning-input>
+            </div>
             <template for:each={records} for:item="item">
                 <p key={item.Id}>
                     {item.Subject} <br/>
                     {item.Status} <br/>
                 </p>
             </template> 
+            <template if:false={records}>
+                There are not matching record.
+            </template>
             <template if:true={erros}>
                 There is an Error while fetching the cases.
             </template>
