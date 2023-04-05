@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-m-around_small">
+        I am inside parent component.
+    </div>
+    <div class="slds-m-top_medium slds-m-bottom_x-large">
+
+        <p> name of child component is : {childName}</p>
+        <!-- Default/basic -->
+        <!-- <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter your name" onchange={handleChange}></lightning-input>
+        </div> -->
+    </div>
+
+    <h1>Show casing the child Component below</h1>
+    <c-child-comp2 name={name} onsimple={handleCustomEvent}></c-child-comp2>
+</template>

@@ -25,7 +25,10 @@
 
     <!-- <c:wireMethod/> -->
 
-    <div class="slds-var-m-around_large">
+    <!-- <div class="slds-var-m-around_large">
         <c:lwcRefreshApex></c:lwcRefreshApex>
-    </div>
+    </div> -->
+
+    <!-- <c:apexImperativeMethod/> -->
+    <c:parentComp2/>
 </aura:application>	

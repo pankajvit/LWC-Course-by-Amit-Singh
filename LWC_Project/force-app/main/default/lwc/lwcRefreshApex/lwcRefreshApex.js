@@ -19,7 +19,7 @@ export default class LwcRefreshApex extends LightningElement {
  
     @wire(getLatestAccounts)
     accList(result){
-        this.wiredAccountList = result; // 
+        this.wiredAccountList = result; 
         if(result.data){
             this.accountList = result.data;
             this.error = undefined;
