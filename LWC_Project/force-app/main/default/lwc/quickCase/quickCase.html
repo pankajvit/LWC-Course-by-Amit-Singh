@@ -1,0 +1,48 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Quick Case" icon-name="standard:case">
+        <div class="slds-m-around_small">
+            <lightning-input 
+                value={subject} 
+                label="Case Subject" 
+                type="text" 
+                name="subject" 
+                placeholder="type here..."
+                onchange={handleChange}>
+            </lightning-input>
+            <lightning-textarea 
+                name="description" 
+                label="Case Description" 
+                placeholder="type here..." 
+                value={description}
+                onchange={handleChange}>
+            </lightning-textarea>
+
+            <lightning-combobox
+                name="CaseStatus"
+                label="Case Status"
+                value={statusVal}
+                placeholder="Select Status"
+                options={status} 
+                onchange={handleChange}></lightning-combobox>
+
+            <lightning-combobox
+                name="CaseOrigin"
+                label="Case Origin"
+                value={originVal}
+                placeholder="Select Progress"
+                options={origin} 
+                onchange={handleChange}></lightning-combobox>
+
+            <lightning-combobox
+                name="CasePriority"
+                label="Priority"
+                value={priorityVal}
+                placeholder="Select Progress"
+                options={priority}
+                onchange={handleChange}></lightning-combobox>
+            <br>
+            <lightning-button label="Create Case"
+                variant="brand" onclick={handleCreate}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

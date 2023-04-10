@@ -2,6 +2,14 @@ import { LightningElement, api } from 'lwc';
 
 export default class ChildComp2 extends LightningElement {
     @api name;
+    
+    date = new Date();
+
+    @api
+    childMethod(messageFromParent){
+        this.name = messageFromParent;
+        this.date = new Date();
+    }
 
 
     handleChange(Event){
@@ -10,8 +18,9 @@ export default class ChildComp2 extends LightningElement {
     handleclickEvent(){
         const clickEvent = new CustomEvent("simple", 
         { 
-            detail: 
-            {childname: this.name}
+            bubbles : true,
+            composed : false
+
         });
         this.dispatchEvent(clickEvent);
     }

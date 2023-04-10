@@ -30,5 +30,6 @@
     </div> -->
 
     <!-- <c:apexImperativeMethod/> -->
-    <c:parentComp2/>
+    <!-- <c:parentComp2/> -->
+    <c:quickCase/>
 </aura:application>	

@@ -12,5 +12,7 @@
     </div>
 
     <h1>Show casing the child Component below</h1>
-    <c-child-comp2 name={name} onsimple={handleCustomEvent}></c-child-comp2>
+    <c-child-comp2 name={childName} onsimple={handleCustomEvent}></c-child-comp2>
+
+    <lightning-button variant="brand" label="click to change date" title="click to change date" onclick={handleClick}></lightning-button>
 </template>
