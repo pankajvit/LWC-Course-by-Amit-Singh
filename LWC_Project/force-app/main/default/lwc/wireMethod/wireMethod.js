@@ -1,5 +1,5 @@
-import { LightningElement, api, track, wire } from 'lwc';
-import getAllCases from '@salesforce/apex/CaseController.getAllCases';
+/*import { LightningElement, api, track, wire } from 'lwc';
+import {getAllCases} from '@salesforce/apex/CaseController.getAllCases';
 export default class WireMethod extends LightningElement {
     @api records;
     @api errors;
@@ -24,8 +24,11 @@ export default class WireMethod extends LightningElement {
     */
     
     
+    // first way, I have implemented wire function
     //@wire(getAllCases) cases;
 
+    // second way, I have implemented wire function
+/*
     @wire(getAllCases, {
         subject : '$subject'
     })
@@ -40,3 +43,4 @@ export default class WireMethod extends LightningElement {
                 }
             }
 }
+*/

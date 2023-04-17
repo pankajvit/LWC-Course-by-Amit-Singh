@@ -5,8 +5,8 @@
       "default": true
     }
   ],
-  "name": "LWC_Project",
+  "name": "LWC_Course",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "55.0"
+  "sourceApiVersion": "56.0"
 }
