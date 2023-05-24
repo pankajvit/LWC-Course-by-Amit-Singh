@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:avilableForAllPageTypes,lightning:isUrlAddressable" access="global">
+
+
+    <aura:attribute type="String" name="codeValue" />
+    <aura:attribute type="String" name="codeText" />
+
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    {!v.codeValue} {!v.codeText}
+    <div class="slds-card">
+        <c:targetComponent codeValue="{!v.codeValue}" codeText="{!v.codeText}"/>
+    </div> 
+</aura:component>	
