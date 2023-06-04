@@ -21,4 +21,10 @@ export default class P2cParentComponent extends LightningElement {
             alternativetext : "Third card accessible description."
         }
     ];
+
+    parValue = 10;
+
+    changeHandler(event){
+        this.parValue = event.target.value;
+    }
 }
