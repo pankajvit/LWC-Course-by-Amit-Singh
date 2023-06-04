@@ -23,4 +23,14 @@
             <c-p2c-progress-component parsentage-value={parValue}></c-p2c-progress-component>
         </div>
     </lightning-card>
+
+    <!-- Example of calling child method from Parent -->
+    <div class="slds-var-m-bottom_medium"></div>
+    <lightning-card title="Parent to Child Communication on Action">
+        <c-p2c-slider-component></c-p2c-slider-component>
+        <div class="slds-var-m-bottom_medium">
+            <lightning-button variant="brand" label="Reset" title="Reset" onclick={handleClick}>
+            </lightning-button>
+        </div>
+    </lightning-card>
 </template>
