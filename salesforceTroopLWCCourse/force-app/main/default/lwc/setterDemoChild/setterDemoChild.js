@@ -11,4 +11,4 @@ export default class SetterDemoChild extends LightningElement {
         let newAge = data.age * 2; 
         this.userDetail = {...data, age:newAge, "location": "Melbourne"};
     }
-}
+}   
