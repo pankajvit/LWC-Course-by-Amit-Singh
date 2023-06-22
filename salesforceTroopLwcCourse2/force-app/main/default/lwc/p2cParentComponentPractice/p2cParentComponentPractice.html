@@ -7,4 +7,11 @@
     <div class="slds-var-m-bottom_medium">
         <c-p2c-crousel-component2 crousel-data={crouselDetails}></c-p2c-crousel-component2>
     </div>
+
+    <div class="slds-var-m-bottom_medium">
+        <lightning-card title="Parent to Child Communication on Action">
+            <lightning-input type="number" label="Enter a number" value={parsentageValue} onkeyup={handleProgressBarValue}></lightning-input>
+            <c-p2c-progress-component2 bar-value={parsentageValue}></c-p2c-progress-component2>
+        </lightning-card>
+    </div>
 </template>

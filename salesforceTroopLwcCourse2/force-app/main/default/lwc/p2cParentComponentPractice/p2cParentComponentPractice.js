@@ -24,4 +24,9 @@ export default class P2cParentComponentPractice extends LightningElement {
             alternativetext : "Third card accessible description."
         }
     ];
+
+    parsentageValue;
+    handleProgressBarValue(event){
+        this.parsentageValue = event.target.value;
+    }
 }
