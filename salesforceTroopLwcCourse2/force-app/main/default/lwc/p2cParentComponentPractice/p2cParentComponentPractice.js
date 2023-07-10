@@ -25,8 +25,9 @@ export default class P2cParentComponentPractice extends LightningElement {
         }
     ];
 
-    parsentageValue;
-    handleProgressBarValue(event){
-        this.parsentageValue = event.target.value;
+    parcentVal=10;
+    changeHandler(event){
+        console.log('parent value'+this.parcentVal);
+        this.parcentVal = event.target.value;
     }
 }
